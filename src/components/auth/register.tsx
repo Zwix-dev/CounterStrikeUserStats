@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { signUp } from "@/actions/sign-up";
 import { Loader2 } from "lucide-react"
 import { authClient } from "@/lib/auth-client";
 export function RegisterForm() {

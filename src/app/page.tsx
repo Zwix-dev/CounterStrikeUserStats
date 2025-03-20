@@ -5,8 +5,8 @@ import InputSearch from "@/components/inputSearch";
 export default async function Home() {
 
   return (
-    <main className="h-screen bg-gray-50 overflow-hidden">
-      <section className="bg-[url('/cs2-bg.png')] bg-cover bg-center h-screen">
+    <main className="h-screen bg-gray-50 overflow-hidden max-w-screen">
+      <section className="bg-[url('/cs2-bg.png')] bg-cover bg-center h-screen w-full">
         <div className="text-6xl font-bold md:flex flex-row justify-center md:gap-6 pt-22 md:pt-56 text-center">
           <h1 className=" text-white">TROUVE</h1>
           <h1 className="text-purple-300 "> LES </h1>
