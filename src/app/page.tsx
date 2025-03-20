@@ -1,25 +1,20 @@
 "use server"
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { UserRoundSearch } from "lucide-react";
+import InputSearch from "@/components/inputSearch";
 
 export default async function Home() {
 
   return (
-
     <main className="h-screen bg-gray-50">
       <section className="bg-[url('/cs2-bg.png')] bg-cover bg-center h-full ">
-        <div className="flex flex-col px-4 py-8 h-full">
-          <div className="flex flex-col mt-64 w-full items-center">
-            <div className="relative w-full max-w-md">
-              <input type="text" placeholder="SteamUrl" className="w-full py-3 pl-3 pr-4 rounded-lg bg-gray-100 text-black focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white hover:bg-gray-500 rounded-lg">
-                <Button className="bg-inherit hover:bg-gray-500">
-                  <UserRoundSearch/>
-                </Button>
-              </div>
-            </div>
+        <div className="text-6xl font-bold flex flex-row justify-center gap-6 pt-52">
+          <h1 className=" text-white">TROUVE</h1>
+          <h1 className="text-purple-300 "> LES </h1>
+          <h1 className="text-purple-500"> CHEATERS </h1>
+        </div>
+        <div className="flex flex-col h-full">
+          <div className="flex flex-col mt-32 w-full items-center">
+            <InputSearch />
           </div>
         </div>
       </section>
